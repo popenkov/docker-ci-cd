@@ -13,7 +13,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@v4 # Мы используем готовый экшн для сборки докер образа
         with: # Ниже указаны параметры для экшна
           registry: ghcr.io
-          name: docker.pkg.github.com/popenkov/docker-ci-cd/docker-ci-cd
+          name: popenkov/docker-ci-cd/docker-ci-cd
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: 'develop'
