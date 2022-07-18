@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master # Мы берем мастер ветку
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master # Мы используем готовый экшн для сборки докер образа
+        uses: elgohr/Publish-Docker-Github-Action@v4 # Мы используем готовый экшн для сборки докер образа
         with: # Ниже указаны параметры для экшна
           registry: ghcr.io
           name: docker.pkg.github.com/popenkov/docker-ci-cd/docker-ci-cd
